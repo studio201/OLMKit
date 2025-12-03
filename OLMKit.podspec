@@ -1,15 +1,16 @@
 Pod::Spec.new do |s|
   s.name         = "OLMKit"
   s.version      = "2.0.1"
-  s.summary      = "olm"
+  s.summary          = "Objective‑C/C++ wrapper for libolm (Matrix E2EE)"
+  s.description      = "This is a fork of libolm/OLMKit providing end‑to‑end encryption primitives used by Matrix clients."
+
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+
 
   s.homepage     = "http://EXAMPLE/olm"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -22,7 +23,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license          = { :type => "Apache-2.0", :file => "LICENSE" }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
