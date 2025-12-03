@@ -74,7 +74,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = ["include/olm/*.hh","src/*.cpp"]
+  s.source_files = [
+    "include/olm/**/*.{h,hh}",
+    "src/**/*.{cpp,c}",
+    "lib/**/*.{c,h}"  # 👈 füge das hinzu!
+  ]
   s.public_header_files = "include/olm/olm.hh"
 
   s.library = "c++"
