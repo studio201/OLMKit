@@ -21,4 +21,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc     = false
   s.libraries        = "c++"
+  s.source_files  = ["include/olm/*.hh","src/*.cpp"]
+  s.public_header_files = "include/olm/olm.hh"
+
+  s.library = "c++"
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/olm/include $(PODS_ROOT)/olm/lib $(PODS_ROOT)/../../include $(PODS_ROOT)/../../lib' }
 end
