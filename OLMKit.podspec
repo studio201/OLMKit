@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OLMKit"
-  s.version      = "0.1.0"
+  s.version      = "2.0.1"
   s.summary      = "olm"
 
   # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/olm.git", :tag => "0.0.1" }
+  s.source           = { :git => "https://github.com/studio201/OLMKit.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
