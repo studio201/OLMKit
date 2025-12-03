@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "olm"
+  s.name             = "OLMKit"
   s.version          = "3.2.4"
   s.summary          = "Objective‑C/C++ wrapper for libolm (Matrix E2EE)"
   s.description      = "This is a fork of libolm/OLMKit providing end‑to‑end encryption primitives used by Matrix clients."
