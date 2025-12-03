@@ -81,6 +81,9 @@ Pod::Spec.new do |s|
     "lib/**/*.{c,h}",
 
   ]
+  s.exclude_files = [
+    "lib/curve25519-donna/python-src/**/*"
+  ]
   s.public_header_files = "include/olm/olm.hh"
 
   s.library = "c++"
