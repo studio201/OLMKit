@@ -78,10 +78,13 @@ Pod::Spec.new do |s|
   s.source_files = [
     "include/olm/**/*.{h,hh}",
     "src/**/*.{cpp,c}",
-    "lib/**/*.{c,h}"  # 👈 füge das hinzu!
+    "lib/**/*.{c,h}",
+
   ]
   s.public_header_files = "include/olm/olm.hh"
 
   s.library = "c++"
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/olm/include $(PODS_ROOT)/olm/lib $(PODS_ROOT)/../../include $(PODS_ROOT)/../../lib' }
+  s.xcconfig = {
+    'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/OLMKit/include $(PODS_ROOT)/OLMKit/lib $(PODS_ROOT)/../../include $(PODS_ROOT)/../../lib $(inherited)'
+  }
 end
